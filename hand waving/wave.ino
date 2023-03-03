@@ -1,21 +1,21 @@
 #include <Servo.h>  
 
 // Define servo objects
-Servo wrist;
+Servo wrist; // servo 6 on the schematic
+Servo three;
 Servo two;
-Servo one;
 
 // Define variables
 int a = 30;
 
 void setup() {
   // Attach servo objects and set initial positions
-  two.attach(9);
-  one.attach(8);
+  three.attach(9);
+  two.attach(8);
   wrist.attach(13);
   delay(50);
-  two.write(95);
-  one.write(2);
+  three.write(95);
+  two.write(2);
   wrist.write(45);
   delay(1000);
 }
