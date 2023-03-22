@@ -25,6 +25,21 @@ class ChessBoard:
                 return start_pos, end_pos
             except:
                 print("Invalid input. Please try again. (example: B2 B4)")
+    
+    # def get_input(self, player):
+    #     """prompt the player for their move input in PGN format and return it as a tuple of start and end positions."""
+    #     print(f"{player}'s turn.")
+    #     while True:
+    #         move_input = input("Enter your move in PGN format: ")
+    #         try:
+    #             if move_input[-1] == '+':
+    #                 move_input = move_input[:-1]
+    #             start_pos, end_pos = move_input.split('-')
+    #             start_col, start_row = ord(start_pos[0])-97, int(start_pos[1])-1
+    #             end_col, end_row = ord(end_pos[0])-97, int(end_pos[1])-1
+    #             return (start_row, start_col), (end_row, end_col)
+    #         except:
+    #             print("Invalid input. Please try again. (example: e2-e4)")
 
 
     def __str__(self):
@@ -36,6 +51,10 @@ class ChessBoard:
         
         return board_str
     
+
+
+
+
 
 board = ChessBoard()
 print(board)
