@@ -4,6 +4,7 @@ class ChessBoard:
     def __init__(self):
         self.board = [['.' for _ in range(8)] for _ in range(8)]
         self.turn = 'white'  # initializing the turn to white (white starts first)
+        self.move_log = [] # moves log in PGN form
         
         # setting up the pieces for the starting position, uppercased pieces are white and lowercased pices are black
         self.board[7] = ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
