@@ -15,10 +15,10 @@ The following components were used in this project:
 ## Set Up Diagram
 
 ### Circuit Configuration
-![Circuit Diagram](.\pictures\circuit_diagram.jpg)
+![Circuit Diagram](.\pictures\Circuit_Diagram.jpg)
 
 ### Arm Configuration
-![Arm Schematics](.\mechanical-arm\pictures\schematics.jpg)
+![Arm Schematics](.\pictures\schematics.jpg)
 
 ## Usage
 
