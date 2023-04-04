@@ -12,7 +12,6 @@ The following components were used in this project:
 * 5 MP Camera sensor
 * Mechanical arm structure (3D printed)*
 
-
 ## Set Up Diagram
 
 ### Circuit Configuration
