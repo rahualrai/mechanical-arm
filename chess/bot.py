@@ -21,8 +21,8 @@ class ChessBoard:
             try:
                 start_pos, end_pos = move_input.split()
                 # convert the positions to coordinates on the board
-                start_pos = (ord(start_pos[0])-65, int(start_pos[1])-1)
-                end_pos = (ord(end_pos[0])-65, int(end_pos[1])-1)
+                start_pos = (8-int(start_pos[1]), ord(start_pos[0])-ord("A"))
+                end_pos = (8-int(end_pos[1]), ord(end_pos[0])-ord("A"))
                 return start_pos, end_pos
             except:
                 print("Invalid input. Please try again. (example: B2 B4)")
@@ -43,6 +43,13 @@ class ChessBoard:
     #             print("Invalid input. Please try again. (example: e2-e4)")
 
 
+    def move(self):
+        move = self.get_input(board.turn)
+        print(move)
+        self.board[move[1][0]][move[1][1]] = self.board[move[0][0]][move[0][1]]
+        self.board[move[0][0]][move[0][1]] = "."
+        
+    
     def __str__(self):
         """return a string representation of the board."""
         board_str = "\n"
@@ -59,4 +66,5 @@ class ChessBoard:
 
 board = ChessBoard()
 print(board)
-print(board.get_input(board.turn))
+board.move()
+print(board)
