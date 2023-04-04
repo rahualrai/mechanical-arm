@@ -26,7 +26,7 @@ To use the mechanical arm, follow these steps:
 
 1. Clone the repository to your local machine
     ```bash
-    git clone https://github.com/suprabhatrijal/everwrite
+    git clone https://github.com/luminaa/mechanical-arm
     ```
 2. Connect the servo motors to the microcontroller according to the circuit diagram
 3. Upload the code to the microcontroller
